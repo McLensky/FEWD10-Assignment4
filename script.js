@@ -17,3 +17,6 @@ var city = /*value*/
         $('#submit-btn’).click(function(){
         $('body').addClass(.nyc)
     })
+    
+    
+    
