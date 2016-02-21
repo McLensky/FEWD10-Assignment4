@@ -4,7 +4,7 @@ $(document).ready(function() {
         //prevent the submit button from refreshing the page
         event.preventDefault();
         //get the value of the #city-type input and correct for capitalization
-        var city = $("#city-type").val();
+        var city = $("#city-type").val().toLowerCase();
         // if the user inputs New York City / NYC / New York change the body class to 'nyc'
         if ((city == "nyc") || (city == "new york city") || (city == "new york")) {
             $("body").attr("class", "nyc");
