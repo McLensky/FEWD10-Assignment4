@@ -7,18 +7,19 @@ $(document).ready(function() {
         var city = $("#city-type").val();
         // if the user inputs New York City / NYC / New York change the body class to 'nyc'
         if ((city == "nyc") || (city == "new york city") || (city == "new york")) {
-            $("body").addClass("nyc");
+            $("body").attr("class", "nyc");
             // if the user inputs SF/San Francisco/Bay Area change the body class to 'sf'
         } else if ((city == "sf") || (city == "san francisco")	|| (city == "san-francisco")) {
-            $("body").addClass("sf");
+            $("body").attr("class", "sf");
             // if the user inputs Austin/ATX change the body class to 'austin'
         } else if ((city == "austin") || (city == "atx")) {
-            $("body").addClass("austin");
+            $("body").attr("class", "austin");
             // if the user inputs Los Angeles/LA/LAX change the body class to 'la'
         } else if ((city == "la") || (city == "los angeles")	|| (city == "lax")) {
-            $("body").addClass("la");
+            $("body").attr("class", "la");
             // if the user inputs Sydney/SYD change the body class to 'sydney'
         } else if ((city == "sydney") || (city == "syd")) {
-            $("body").addClass("sydney");
+            $("body").attr("class", "sydney");
         };
-    });
+    })
+})
