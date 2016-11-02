@@ -1,3 +1,4 @@
+
 //wait for the DOM elements to load before executing
 $(document).ready(function() {
     $('#submit-btn').click(function (event) {
